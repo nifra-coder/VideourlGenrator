@@ -17,7 +17,7 @@ connectDB().then((gridFSBucket) => {
     console.error('Failed to initialize GridFSBucket:', err);
 });
 
-app.use('/URL-Generated/video', videoRoutes); // Use Routes
+app.use('/video', videoRoutes); // Use Routes
 
 const PORT = process.env.PORT || 3005;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
